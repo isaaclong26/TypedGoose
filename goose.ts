@@ -385,12 +385,4 @@ export default class TypeModel {
     fs.writeFileSync(`./models/${this.name}.ts`, this.ts);
   }
 }
-let ots = [
-  { key: "name", value: "String" },
-  { key: "type", value: "String" },
-  { key: "die", value: "String" },
-];
 
-let test = new TypeModel("Sample");
-test.init(ots);
-console.log("done");
