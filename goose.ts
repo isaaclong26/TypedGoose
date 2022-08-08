@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 import fs from "fs";
 
 mongoose.connect(
-  "mongodb+srv://isaaclong26:elco9377@cluster0.amypn.mongodb.net/sampledb?retryWrites=true&w=majority",
+ mongoURI,
   {
     tlsAllowInvalidHostnames: true,
   }
