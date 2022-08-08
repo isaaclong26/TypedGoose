@@ -12,3 +12,8 @@ examples are in models.ts
 
 ## Result 
 ![image](https://user-images.githubusercontent.com/54558961/183461855-e3ef9e27-2a28-44dc-8519-b7a2a5709edb.png)
+
+
+## Notes
+-Push Gets weird Correct Syntax is
+`    let samp = await Sample.findOneAndUpdate({name: "2603"}, {$push: { "finish": {name: "black", shelf: "11", spot: "A", inventory: 58} }})`
