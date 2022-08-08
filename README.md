@@ -1,4 +1,4 @@
-# TypedGoose
+# TypedGoose(beacuse typegoose is already a thing it just sucks)
 
 ## Description 
 Basically a Macro to avoid the headache of writing typed mongoose schemas
