@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 import fs from "fs";
 
 mongoose.connect(
- mongoURI,
+  "mongodb+srv://isaaclong26:elco9377@cluster0.amypn.mongodb.net/sampledb?retryWrites=true&w=majority",
   {
     tlsAllowInvalidHostnames: true,
   }
@@ -146,7 +146,7 @@ export default class TypeModel {
       this.subDocBool
         ? this.subDocs.map((subDoc) => {
             return subDoc.int;
-          })
+          }).join('')
         : " "
     } 
 
@@ -385,4 +385,10 @@ export default class TypeModel {
     fs.writeFileSync(`./models/${this.name}.ts`, this.ts);
   }
 }
+let ots = [
+  { key: "name", value: "String" },
+  { key: "type", value: "String" },
+  { key: "die", value: "String" },
+];
+
 
